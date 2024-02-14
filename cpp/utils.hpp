@@ -30,6 +30,7 @@
 #include <span>
 #include <stack>
 #include <tuple>
+#include <ranges>
 
 using namespace std;
 

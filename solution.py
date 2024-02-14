@@ -167,24 +167,24 @@ def test1(solution):
     print("{}:{}({:.6f} sec) result = {}".format(inspect.currentframe().f_code.co_name, type(solution), endTime - startTime, result))
     assert(expected == result)
 
-def test3(solution):
-    obstacleGrid = [
-        [0,0],
-        [0,1]
-    ]
-    expected = 0
-    startTime = time.time()
-    result = solution.uniquePathsWithObstacles(obstacleGrid)
-    endTime = time.time()
-    print("{}:{}({:.6f} sec) result = {}".format(inspect.currentframe().f_code.co_name, type(solution), endTime - startTime, result))
-    assert(expected == result)
-
 def test2(solution):
     obstacleGrid = [
         [0,1],
         [0,0]
     ]
     expected = 1
+    startTime = time.time()
+    result = solution.uniquePathsWithObstacles(obstacleGrid)
+    endTime = time.time()
+    print("{}:{}({:.6f} sec) result = {}".format(inspect.currentframe().f_code.co_name, type(solution), endTime - startTime, result))
+    assert(expected == result)
+
+def test3(solution):
+    obstacleGrid = [
+        [0,0],
+        [0,1]
+    ]
+    expected = 0
     startTime = time.time()
     result = solution.uniquePathsWithObstacles(obstacleGrid)
     endTime = time.time()
